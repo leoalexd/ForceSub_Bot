@@ -5,7 +5,7 @@ class Config():
   BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
   # Su bot actualiza el nombre de usuario del canal sin @ o déjelo vacío
   UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "")
-  # Heroku postgres DB URL
+  # Heroku postgres DB URL elephantsql.com
   DATABASE_URL = os.environ.get("DATABASE_URL", "")
   # obténgalo en my.telegram.org
   APP_ID = os.environ.get("APP_ID", 123456)
