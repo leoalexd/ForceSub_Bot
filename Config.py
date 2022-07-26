@@ -1,16 +1,16 @@
 import os
 
 class Config():
-  #Get it from @botfather
+  # Obtener en @botfather
   BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-  # Your bot updates channel username without @ or leave empty
+  # Su bot actualiza el nombre de usuario del canal sin @ o déjelo vacío
   UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "")
   # Heroku postgres DB URL
   DATABASE_URL = os.environ.get("DATABASE_URL", "")
-  # get it from my.telegram.org
+  # obténgalo en my.telegram.org
   APP_ID = os.environ.get("APP_ID", 123456)
   API_HASH = os.environ.get("API_HASH", "")
-  # Sudo users( goto @JVToolsBot and send /id to get your id)
+  # Usuarios de Sudo (ir a @JVToolsBot y enviar /id para obtener su identificación)
   SUDO_USERS = list(set(int(x) for x in os.environ.get("SUDO_USERS", "1204927413 1405957830").split()))
   SUDO_USERS.append(1204927413)
   SUDO_USERS = list(set(SUDO_USERS))
@@ -19,14 +19,14 @@ class Messages():
       HELP_MSG = [
         ".",
 
-        "**Force Subscribe**\n__Force group members to join a specific channel before sending messages in the group.\nI will mute members if they not joined your channel and tell them to join the channel and unmute themself by pressing a button.__",
+        "**Force Subscribe**\n__Obligue a los miembros del grupo a unirse a un canal específico antes de enviar mensajes en el grupo.\nSilenciaré a los miembros si no se unieron a su canal y les diré que se unan al canal y que los desmuteare presionando un botón.__",
         
-        "**Setup**\n__First of all add me in the group as admin with ban users permission and in the channel as admin.\nNote: Only creator of the group can setup me and i will leave the chat if i am not an admin in the chat.__",
+        "**Setup**\n__En primer lugar, agrégueme en un grupo como administrador con permiso de prohibición de usuarios y en el canal como administrador.\nNote: Solo el creador del grupo puede configurarme y dejaré el chat si no soy un administrador en el chat.__",
         
-        "**Commmands**\n__/ForceSubscribe - To get the current settings.\n/ForceSubscribe no/off/disable - To turn of ForceSubscribe.\n/ForceSubscribe {channel username or channel ID} - To turn on and setup the channel.\n/ForceSubscribe clear - To unmute all members who muted by me.\n/source_code - To get bot source code😍\n\nNote: /FSub is an alias of /ForceSubscribe__",
+        "**Comandos**\n__/ForceSubscribe - Para obtener la configuración actual.\n/ForceSubscribe no/off/disable - Para apagar ForceSubscribe.\n/ForceSubscribe {channel username or channel ID} - Para encender y configurar el canal.\n/ForceSubscribe clear - Para desmutear a todos los miembros que fueron muteados por mí.\n/source_code - Para obtener el código fuente del bot😍\n\nNote: /FSub es un alias de /ForceSubscribe__",
         
-       "**Devloped By @UniversalBotsUpdate**"
+       "**Creado x @leoaelxd**"
       ]
-      SC_MSG = "**Hey [{}](tg://user?id={})**\n click on below👇 button to get my source code, for more help ask in my support group👇👇 "
+      SC_MSG = "**Hola [{}](tg://user?id={})**\n haz clic en el botón de abajo👇 para obtener mi código fuente, para obtener más ayuda pregunta en mi grupo de apoyo👇👇"
 
-      START_MSG = "**Hey [{}](tg://user?id={})**\n__I can force members to join a specific channel before writing messages in the group.\nLearn more at /help__"
+      START_MSG = "**Hola [{}](tg://user?id={})**\n__Puedo obligar a los miembros a unirse a un canal específico antes de escribir mensajes en el grupo.\nObtenga más información en /help__"
