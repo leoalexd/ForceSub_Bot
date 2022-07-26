@@ -59,8 +59,8 @@ async def _start(client, message):
 	reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Join Updates Channel", url="https://t.me/FireUserbot1"),
-                    InlineKeyboardButton("Support Group", url="https://t.me/FireUserbot")
+                    InlineKeyboardButton("Entra al canal de updates", url="https://t.me/FireUserbot1"),
+                    InlineKeyboardButton("Grupo de soporte", url="https://t.me/FireUserbot")
                 ],
                 [
                     InlineKeyboardButton("🧑‍💻Developer🧑‍💻", url="https://t.me/leoalexd")
@@ -82,8 +82,8 @@ async def _source_code(client, message):
                     InlineKeyboardButton("Souce Code", url="")
                 ],
                 [
-                    InlineKeyboardButton("Join Updates Channel", url="https://t.me/FireUserbot1"),
-                    InlineKeyboardButton("Support Group", url="https://t.me/FireUserbot")
+                    InlineKeyboardButton("Entra al canal de updates", url="https://t.me/FireUserbot1"),
+                    InlineKeyboardButton("Grupo de soporte", url="https://t.me/FireUserbot")
                 ],
                 [
                     InlineKeyboardButton("🧑‍💻Developer🧑‍💻", url="https://t.me/leoalexd")
